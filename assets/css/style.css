@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+	--light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+}
+
+.background {
+  display:box;
+  position: fixed;
+  height: 100%;
+}
+
+#centerimg {
+  float:right;
+  width: 40%;
+  
+}
+
+#top, #bottom {
+  width: 100%;
+}
+
+#bottom {
+  text-align: end;
+}
+
+main {
+  display: block;
+  padding: 15%;
+  width: 60%;
+}
+
+#anouncement {
+  color: var(--purple);
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#register {
+  font-weight: lighter;
+  text-align: center;
+}
+
+div button {
+  margin:5% 38%;
+}
+
+button {
+  background-color: var(--purple);
+  color: white;
+  border: 0;
+  padding: 2%;
+  width: 120px;
+  border-radius: 9px;
+}
+
+.deadline {
+  display: flex;
+  place-content: center;
+}
+.deadline-format {
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.deadline-format span {
+  display: block;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}

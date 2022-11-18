@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Launch</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background">
+      <img id="top" src="/assets/images/top-image.svg" alt="Top image" />
+      <img
+        id="centerimg"
+        src="/assets/images/rocket.svg"
+        alt="Image of a rocket"
+      />
+      <img
+        id="bottom"
+        src="/assets/images/bottom-image.svg"
+        alt="bottom image"
+      />
+    </div>
+    <main>
+      <div id="anouncement">
+        <h1>ready to launch in...</h1>
+      </div>
+
+      <div class="deadline">
+        <!-- days -->
+        <div class="deadline-format">
+          <div>
+            <span>days</span>
+            <h4 class="days">00</h4>
+          </div>
+        </div>
+        <!-- end of days -->
+        <!-- hours -->
+        <div class="deadline-format">
+          <div>
+            <span>hours</span>
+            <h4 class="hours">00</h4>
+          </div>
+        </div>
+        <!-- end of hours -->
+        <!-- minutes -->
+        <div class="deadline-format">
+          <div>
+            <span>minutes</span>
+            <h4 class="minutes">00</h4>
+          </div>
+        </div>
+        <!-- end of minutes -->
+        <!-- seconds -->
+        <div class="deadline-format">
+          <div>
+            <span>seconds</span>
+            <h4 class="seconds">00</h4>
+          </div>
+        </div>
+        <!-- end of seconds -->
+      </div>
+
+      <p id="register">Register now to learn more!</p>
+
+      <div>
+        <button type="submit">Register</button>
+      </div>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
