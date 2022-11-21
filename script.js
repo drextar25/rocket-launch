@@ -12,6 +12,7 @@ const months = [
   "November",
   "December",
 ];
+
 const weekdays = [
   "Sunday",
   "Monday",
@@ -30,19 +31,16 @@ let tempYear = tempDate.getFullYear();
 let tempMonth = tempDate.getMonth();
 let tempDay = tempDate.getDate();
 // months are ZERO index based;
-const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
-const year = futureDate.getFullYear();
-const hours = futureDate.getHours();
-const minutes = futureDate.getMinutes();
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
 let month = futureDate.getMonth();
 month = months[month];
 const weekday = weekdays[futureDate.getDay()];
-const date = futureDate.getDate();
 
 const futureTime = futureDate.getTime();
-function getRemaindingTime() {
+
+function getRemainingTime() {
   const today = new Date().getTime();
 
   const t = futureTime - today;
@@ -50,7 +48,7 @@ function getRemaindingTime() {
   // 1m = 60s
   // 1hr = 60m
   // 1d = 24hr
-  // values in miliseconds
+  // values in milliseconds
   const oneDay = 24 * 60 * 60 * 1000;
   const oneHour = 60 * 60 * 1000;
   const oneMinute = 60 * 1000;
@@ -80,6 +78,13 @@ function getRemaindingTime() {
   }
 }
 // countdown;
-let countdown = setInterval(getRemaindingTime, 1000);
+let countdown = setInterval(getRemainingTime, 1000); // 1sec
+
 //set initial values
-getRemaindingTime();
+getRemainingTime();
+
+// * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+function testThisButton() {
+  alert("Nope!");
+}
