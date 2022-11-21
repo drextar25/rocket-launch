@@ -7,6 +7,7 @@
     <title>Rocket Launch</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,64 +18,80 @@
   </head>
 
   <body>
-    <div class="background">
-      <img id="top" src="./assets/images/top-image.svg" alt="Top image" />
-      <img
-        id="center-img"
-        src="./assets/images/rocket.svg"
-        alt="Image of a rocket"
-      />
-      <img
-        id="bottom"
-        src="./assets/images/bottom-image.svg"
-        alt="bottom image"
-      />
-    </div>
     <main>
-      <div id="anouncement">
-        <h1>ready to launch in...</h1>
-      </div>
+      <header>
+        <img id="top" src="./assets/images/top-image.svg" alt="Top image" />
+      </header>
 
-      <div class="deadline">
-        <!-- days -->
-        <div class="deadline-format">
-          <div>
-            <span>days</span>
-            <h4 class="days">00</h4>
+      <article>
+        <section>
+          <div id="announcement">
+            <h1>ready to launch in...</h1>
           </div>
-        </div>
-        <!-- end of days -->
-        <!-- hours -->
-        <div class="deadline-format">
-          <div>
-            <span>hours</span>
-            <h4 class="hours">00</h4>
-          </div>
-        </div>
-        <!-- end of hours -->
-        <!-- minutes -->
-        <div class="deadline-format">
-          <div>
-            <span>minutes</span>
-            <h4 class="minutes">00</h4>
-          </div>
-        </div>
-        <!-- end of minutes -->
-        <!-- seconds -->
-        <div class="deadline-format">
-          <div>
-            <span>seconds</span>
-            <h4 class="seconds">00</h4>
-          </div>
-        </div>
-        <!-- end of seconds -->
-      </div>
 
-      <p id="register">Register now to learn more!</p>
+          <div class="deadline">
+            <!-- days -->
+            <div class="deadline-format">
+              <div>
+                <p>days</p>
 
-      <div>
-        <button type="submit">Register</button>
-      </div>
+                <h4 class="days">00</h4>
+              </div>
+            </div>
+            <!-- /days -->
+
+            <!-- hours -->
+            <div class="deadline-format">
+              <div>
+                <p>hours</p>
+
+                <h4 class="hours">00</h4>
+              </div>
+            </div>
+            <!-- /hours -->
+
+            <!-- minutes -->
+            <div class="deadline-format">
+              <div>
+                <p>minutes</p>
+
+                <h4 class="minutes">00</h4>
+              </div>
+            </div>
+            <!-- /minutes -->
+
+            <!-- seconds -->
+            <div class="deadline-format">
+              <div>
+                <p>seconds</p>
+
+                <h4 class="seconds">00</h4>
+              </div>
+            </div>
+            <!-- /seconds -->
+          </div>
+
+          <p id="register">Register now to learn more!</p>
+
+          <button type="button" onclick="testThisButton()">Register</button>
+        </section>
+
+        <aside>
+          <img
+            id="center-img"
+            src="./assets/images/rocket.svg"
+            alt="Image of a rocket"
+          />
+        </aside>
+      </article>
+
+      <footer>
+        <img
+          id="bottom"
+          src="./assets/images/bottom-image.svg"
+          alt="bottom image"
+        />
+      </footer>
     </main>
 
     <script src="./script.js"></script>
